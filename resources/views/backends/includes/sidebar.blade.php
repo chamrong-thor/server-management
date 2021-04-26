@@ -70,7 +70,7 @@
         </div>
         <div class="sb-sidenav-footer bg-darkblue">
             <div class="small">Logged in as:</div>
-            Start Bootstrap
+            Administrator
         </div>
     </nav>
 </div>
