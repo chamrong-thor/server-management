@@ -8,9 +8,10 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>@yield('title')</title>
-    <link href="{{ asset('backends/css/styles.css') }}" rel="stylesheet" />
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
         crossorigin="anonymous" />
+    <link href="{{ asset('backends/css/styles.css') }}" rel="stylesheet" />
+    <link href="{{ asset('backends/css/custom.css') }}" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b3671f0868.js" crossorigin="anonymous"></script>
 </head>
 
