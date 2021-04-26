@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +14,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->intended('dashboard');
 });
+
+Auth::routes();
+
+Route::get('/dashboard', 'HomeController@index')->name('home');
+Route::get('/user/trash', 'UsersController@trash')->name('user.trash');
+Route::get('/customer/trash', 'CustomersController@trash')->name('customer.trash');
+Route::get('/device/trash', 'CustomersController@trash')->name('device.trash');
+Route::resource('/user', 'UsersController');
+Route::resource('/customer', 'CustomersController');
+Route::resource('/device', 'CustomersController');
